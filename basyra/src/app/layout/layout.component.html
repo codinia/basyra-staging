@@ -1,0 +1,12 @@
+
+<!-- create a responsive wrapper around our content. 
+    With the 'fxLayout' element,define the flow order of the child element inside the container
+    The 'fxLayoutAlign' will position children according to the main-axis and cross-axis.  -->
+<div class="layout-wrapper" fxLayout="row wrap" fxLayoutAlign="center center">
+<!--'fxFlex' element resize the child element to 80%  of it's parent and
+     if the screen goes below medium than the child will take 100% of it's parent.-->
+    <div  fxFlex="80%" fxFlex.lt-md="100%" class="flex-wrapper">
+        <!--With the <ng-content> element, we are using angular content projection.-->
+        <ng-content></ng-content>
+    </div>
+</div>

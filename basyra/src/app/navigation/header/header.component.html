@@ -1,0 +1,56 @@
+<mat-toolbar color="primary" fxLayout = "row" fxLayoutAlign="space-between center" >
+    
+    <div>
+        <a class="logo_header" routerLink="/home"><img class="jpg-icon"  src="../assets/images/basyera logo transpaerent.png" 
+            style="height: 50px; border:2px solid;"></a>
+    </div>
+    <div fxLayout="row"  fxLayoutAlign="center center"  >
+        <mat-form-field floatLabel="never">
+
+    
+        <input matInput 
+               #searchInput="matInput" 
+               type="text" 
+                placeholder="Search"  
+                 
+               autocomplete="off"/>
+        <mat-icon 
+                matSuffix>search</mat-icon>         
+      </mat-form-field>
+    </div>
+
+    <div  fxLayout="row" fxLayoutAlign="end center" fxHide.xs>
+        <ul fxLayout fxLayoutGap="15px" class="navigation-items" >
+            <li>
+                
+                <a  routerLink="/becomeHost" mat-raised-button class = "primary-bgcolor white-fontColor"style="color: black; ">Become a host</a>
+
+            </li>
+            <li>
+                <a routerLink="/account" ><mat-icon style="margin-top: 5px;">account_circle</mat-icon></a>
+            </li>
+        </ul>
+    </div>
+  
+  </mat-toolbar>
+
+  
+<!-- <mat-toolbar class='spacer'>
+
+    <img class="jpg-icon"  src="../assets/images/basyera logo transpaerent.png" 
+        style="max-width:10%; height: inherit;">
+        <span class="spacer"></span>
+        <mat-form-field style="width: 20rem" floatLabel="never">
+            <input matInput 
+                   #searchInput="matInput" 
+                   type="text" 
+                   placeholder="Search"  
+                     
+                   autocomplete="off"/>
+            <mat-icon 
+                    matSuffix>search</mat-icon>         
+          </mat-form-field>
+          <span class="spacer"></span>
+          <button mat-raised-button class = "primary-bgcolor white-fontColor"style="color: white; ">Become a host</button>
+          <mat-icon>account_circle</mat-icon>
+        </mat-toolbar> -->

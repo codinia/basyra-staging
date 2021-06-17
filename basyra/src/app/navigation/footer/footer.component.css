@@ -1,0 +1,5 @@
+.sticky_footer{
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+}
