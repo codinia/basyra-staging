@@ -10,6 +10,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { MaterialModule } from './material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FooterComponent } from './navigation/footer/footer.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { FooterComponent } from './navigation/footer/footer.component';
     HeaderComponent,
     HomeComponent,
     FooterComponent,
+    SidenavListComponent,
   ],
   imports: [
     BrowserModule,

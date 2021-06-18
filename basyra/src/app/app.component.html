@@ -3,6 +3,7 @@
   <mat-sidenav-container>
       <mat-sidenav role="navigation" #sidenav>
       <!--this is a place for us to add side-nav code-->
+      <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
       </mat-sidenav>
 
       <mat-sidenav-content>
