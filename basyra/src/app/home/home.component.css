@@ -12,6 +12,41 @@ section div + p{
     font-size: 20px;
     padding-bottom: 20px;
 }
+.hero-header{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+}
+div.layout{
+    min-height: auto !important;
+    height: 128px !important;
+    max-height: auto !important;
+}
+.hero-header > div div{
+    padding: 8px;
+    box-shadow: 0px 2px 5px 0px rgb(0 0 0 / 26%);
+    opacity:0.9;
+    color: white;
+    text-align: center;
+}
+.demo-include{
+    display: block;
+}
+.hero-header > div div:nth-child(1){
+    background-color: lightgrey;
+}
+.hero-header > div div:nth-child(2){
+    background-color:lightpink;
+}
+.hero-header > div div:nth-child(3){
+    background-color:lightseagreen;
+}
+.hero-header > div div:nth-child(4){
+    background-color:lightskyblue;
+}
+.hero-header > div div:nth-child(5){
+    background-color:lightslategray;
+}
 mat-tab-group {
     text-align: center;
 }

@@ -1,10 +1,12 @@
 <!--'fxLayout' element define the flow order of the child component.
     'fxFlexalign' Works like fxLayoutAlign, but applies only to a single flexbox item, instead of all of them-->
 <section fxLayout="column" fxFlexAlign="stretch">
-    <div fxFlexAlign="center">
+    <!-- <div fxFlexAlign="center">
         <p>Welcome to material angular owner account application</p>
     </div>
-    <p>In this application we are going to work with:</p>
+    <p>In this application we are going to work with:</p> -->
+  
+   
     
     <mat-tab-group (selectedTabChange)="executeSelectedChange($event)">
         <mat-tab label="Material Components">
@@ -19,3 +21,26 @@
         </mat-tab>
     </mat-tab-group>
 </section>
+<div class="demo-include">
+    <div class="hero-header">
+        <div layout="row">
+            <div hide show-gt-sm flex>
+                Only show on gt-sm devices.
+            </div>
+            <div hide-gt-sm flex>
+                Shown on small and medium.<br>
+                Hidden on gt-sm devices.
+            </div>
+            <div show hide-gt-md flex>
+                Shown on small and medium size devices.<br>
+                Hidden on gt-md devices.
+            </div>
+            <div hide show-md flex>
+                Shown on medium size devices only.
+            </div>
+            <div hide show-gt-lg flex>
+                Shown on devices larger than 1200px wide only.
+            </div>
+        </div>
+    </div>
+</div>
