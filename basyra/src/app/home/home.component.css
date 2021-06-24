@@ -1,9 +1,14 @@
-section div p{
-    color: #3f51b5;
+section div h1{
     font-size: 30px;
-    text-shadow: 2px 3px 5px grey;
-    margin: 30px 0;
+    text-shadow: 2px 3px 5px black;
+    margin: 50px 0;
     line-height: normal;
+    display: flex;
+    align-items: center;
+    height: 30%;
+    align-content: center; 
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 /* div + p ===> Selects the first <p> element that is placed immediately after <div> elements */
 section div + p{
@@ -15,7 +20,6 @@ section div + p{
 .hero-header{
     position: relative;
     overflow: hidden;
-    display: flex;
 }
 div.layout{
     min-height: auto !important;
@@ -33,20 +37,41 @@ div.layout{
     display: block;
 }
 .hero-header > div div:nth-child(1){
-    background-color: lightgrey;
+    /* FA983A */
+    background: linear-gradient( rgba(255,168,1, 0.05) 100%, rgba(255,168,1, 0.05)100%),url('../../../designs/sale-concept-illustration-double.png'), radial-gradient(grey, transparent) ;
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+   
 }
+/* .hero-header > div div:nth-child(1)::before{
+    background-color: #FFA801;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+} */
 .hero-header > div div:nth-child(2){
-    background-color:lightpink;
+    background: linear-gradient( rgba(255,168,1, 0.05) 100%, rgba(255,168,1, 0.05)100%),url('../../../designs/sale-concept-illustration.png'), radial-gradient(grey, transparent);
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+
 }
-.hero-header > div div:nth-child(3){
-    background-color:lightseagreen;
-}
-.hero-header > div div:nth-child(4){
-    background-color:lightskyblue;
-}
-.hero-header > div div:nth-child(5){
-    background-color:lightslategray;
-}
+/* .hero-header > div div:nth-child(2)::before{
+    background-color: #FFA801;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+} */
+
 mat-tab-group {
     text-align: center;
 }

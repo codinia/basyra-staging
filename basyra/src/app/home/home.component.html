@@ -5,7 +5,38 @@
         <p>Welcome to material angular owner account application</p>
     </div>
     <p>In this application we are going to work with:</p> -->
-  
+    <div class="demo-include">
+        <div class="hero-header">
+            <div fxLayout>
+                <div class="_fullScreenView" fxHide fxShow.gt-xs fxFlex>
+                        <h1 style="color: white;">Basyra.<br>Explore New Places.</h1> 
+                        <li style="list-style-type: none; display: flex; justify-content: space-evenly;">
+                            <ul style="
+                           padding-inline-start: 0px;"><a mat-raised-button style="color: white; min-width: 100px;"  color="primary" >Post</a>
+                            </ul>
+                           <ul style="padding-inline-start: 0px;"><a mat-raised-button style="color: #FFA801; min-width: 100px;">FIND</a></ul>
+                        </li>
+                </div>
+                <!-- <div fxHide-gt-sm fxFlex>
+                    Shown on small and medium.<br>
+                    Hidden on gt-sm devices.
+                </div> -->
+                <div class="_smallScreenView" fxHide.gt-xs fxShow-xs fxFlex>
+                    <h1 style="color: white;">Basyra.<br>
+                    Explore New Places.</h1>
+                    <li style="list-style-type: none; ">
+                        <ul style="padding-inline-start: 0px;"><a mat-raised-button style="color: white; min-width: 100px;"  color="primary" >Post</a>
+                        </ul>
+                       <ul style="padding-inline-start: 0px;"><a mat-raised-button style="color: #FFA801; min-width: 100px;">FIND</a></ul>
+                    </li>
+                </div>
+                <!-- <div fxHide fxShow.lt-md fxFlex="100%">
+                    Shown on medium size devices only.
+                </div> -->
+                
+            </div>
+        </div>
+    </div>
    
     
     <mat-tab-group (selectedTabChange)="executeSelectedChange($event)">
@@ -21,26 +52,3 @@
         </mat-tab>
     </mat-tab-group>
 </section>
-<div class="demo-include">
-    <div class="hero-header">
-        <div layout="row">
-            <div hide show-gt-sm flex>
-                Only show on gt-sm devices.
-            </div>
-            <div hide-gt-sm flex>
-                Shown on small and medium.<br>
-                Hidden on gt-sm devices.
-            </div>
-            <div show hide-gt-md flex>
-                Shown on small and medium size devices.<br>
-                Hidden on gt-md devices.
-            </div>
-            <div hide show-md flex>
-                Shown on medium size devices only.
-            </div>
-            <div hide show-gt-lg flex>
-                Shown on devices larger than 1200px wide only.
-            </div>
-        </div>
-    </div>
-</div>
