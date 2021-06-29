@@ -22,9 +22,9 @@ section div + p{
     overflow: hidden;
 }
 div.layout{
-    min-height: auto !important;
-    height: 128px !important;
-    max-height: auto !important;
+    min-height: auto ;
+    height: 128px ;
+    max-height: auto ;
 }
 .hero-header > div div{
     padding: 8px;
@@ -79,4 +79,126 @@ mat-tab-group {
 }
 mat-tab-group p {
     padding-top: 20px;
+}
+.tp-card{
+    max-width:100%;
+}
+._cardContentCss{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+}
+._cardImages{
+    margin: 0px 5px 0px 5px;
+}
+.a{
+    z-index: 0 ;
+    background: rgb(72, 72, 72) ;
+    border: 0px none ;
+    display: block ;
+    height: auto ;
+    overflow: hidden ;
+    position: relative ;
+    text-align: left ;
+    text-decoration: none ;
+    width: 100% ;
+    border-radius: 16px ;
+}
+
+.a{
+    overflow: clip ;
+    height: 250px;
+
+}
+@media (max-width: 743px){
+    .a{
+        min-width: 220px ;
+        height: 200px ;
+    }
+}
+
+.c{
+    position: absolute ;
+    inset: -1px 0px ;
+}
+/* .d{
+    display: inline-block ;
+    vertical-align: bottom ;
+    min-height: 1px ;
+    position: relative ;
+    background-position: 50% 50% ;
+    background-repeat: no-repeat ;
+}
+.e{
+    height: 100% ;
+    width: 100% ;
+} */
+.f{
+    -webkit-box-align: center ;
+    position: absolute ;
+    top: 0px ;
+    display: flex ;
+    flex-flow: column ;
+    align-items: center ;
+    text-align: center ;
+    width: 100% ;
+    padding-top: 32px ;
+    padding-left: 32px ;
+    padding-right: 32px ;
+    z-index: 1 ;
+}
+@media (max-width: 743px){
+    .f {
+        position: absolute ;
+        inset: -1px 0px ;
+    }
+}
+.g{
+    white-space: pre-wrap ;
+    font-weight: 600 ;
+    font-size: 20px ;
+    line-height: 24px ;
+}
+@media (min-width: 375px){
+    .g {
+        font-size: 30px ;
+        line-height: 36px ;
+    }
+}
+.h{
+    font-size: 14px ;
+    line-height: 16px ;
+    padding-top: 8px ;
+    white-space: pre-line ;
+}
+@media (min-width: 375px)
+{
+    .h {
+        font-size: 16px ;
+        line-height: 20px ;}
+}
+.i{
+    margin-top: 16px ;
+}
+g{
+    cursor: pointer ;
+    display: inline-block ;
+    margin: 0px ;
+    position: relative ;
+    text-align: center ;
+    text-decoration: none ;
+    width: auto ;
+    touch-action: manipulation ;
+    font-weight: 600 ;
+    font-size: 14px ;
+    line-height: 18px ;
+    letter-spacing: normal ;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif ;
+    color: rgb(72, 72, 72) ;
+    padding: 9px 16px ;
+    border: 0px ;
+    background: #FFFFFF ;
+    border-radius: 8px ;
 }
