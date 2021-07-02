@@ -1,5 +1,5 @@
 .primary-bgcolor{
-    background-color: orange;
+    background-color: #ff9800;
 }
 .white-fontColor{
     color:white;
@@ -11,11 +11,19 @@ mat-sidenav-container, mat-sidenav-content, mat-sidenav {
     height: 100%;
 }
 
+
+mat-sidenav-content::-webkit-scrollbar {
+    width: 5px;
+}
+mat-sidenav-content::-webkit-scrollbar-thumb {
+    background: #ff9800; 
+    
+}
+
 mat-sidenav {
     width: 250px;
 }
-
-main {
+/* main {
     padding: 10px;
-}
+} */
 

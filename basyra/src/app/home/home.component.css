@@ -1,21 +1,22 @@
 section div h1{
     font-size: 30px;
-    text-shadow: 2px 3px 5px black;
+    
     margin: 80px 0 0px 0;
     line-height: normal;
     display: flex;
     align-items: center;
     height: 30%;
-    align-content: center; 
+    align-content: center;
     flex-wrap: nowrap;
     justify-content: center;
+    
 }
 /* div + p ===> Selects the first <p> element that is placed immediately after <div> elements */
 section div + p{
     color: #3f51b5;
     font-weight: bold;
     font-size: 20px;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 .hero-header{
     position: relative;
@@ -33,12 +34,10 @@ div.layout{
     color: white;
     text-align: center;
 }
-.demo-include{
-    display: block;
-}
+
 .hero-header > div div:nth-child(1){
     /* FA983A */
-    background: linear-gradient( rgba(255,168,1, 0.05) 100%, rgba(255,168,1, 0.05)100%),url('../../../designs/sale-concept-illustration-double.png'), radial-gradient(grey, transparent) ;
+    background: linear-gradient( rgba(255,168,1, 0.05) 100%, rgba(255,168,1, 0.05)100%),url('../../assets/images/designs/sale-concept-illustration-double.png'), radial-gradient(grey, transparent) ;
     width: 100%;
     height: 70vh;
     background-size: cover;
@@ -55,15 +54,37 @@ div.layout{
     width: 100%;
 } */
 .hero-header > div div:nth-child(2){
-    background: linear-gradient( rgba(255,168,1, 0.05) 100%, rgba(255,168,1, 0.05)100%),url('../../../designs/sale-concept-illustration.png'), radial-gradient(grey, transparent);
+    background: linear-gradient( rgba(255,168,1, 0.05) 100%, rgba(255,168,1, 0.05)100%),url('../../assets/images/designs/sale-concept-illustration.png'), radial-gradient(grey, transparent);
     width: 100%;
     height: 70vh;
     background-size: cover;
     background-repeat-x: no-repeat;
     background-repeat-y: no-repeat;
     background-position: center;
-    
-
+}
+.headingHeroHeader{
+    color: white;
+    text-shadow: 2px 3px 5px black;
+}
+._fullViewButtonCsslist{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+._smallViewButtonCsslist{
+    list-style-type: none;
+}
+._postButtonCss{
+    color: white; min-width: 150px; border: 1px solid white;
+}
+._findButtonCss{
+    color: #FFA801; min-width: 150px; border: 1px solid #FFA801;
+}
+.p_InlineStart{
+    padding-inline-start: 0px;
+}
+._colorWhite{
+    color:rgb(255, 255, 255);
 }
 /* .hero-header > div div:nth-child(2)::before{
     background-color: #FFA801;
@@ -80,20 +101,137 @@ mat-tab-group {
 mat-tab-group p {
     padding-top: 20px;
 }
-.tp-card{
-    max-width:100%;
+._cardSectionContainer{
+    overflow-x: auto; 
+    width: -webkit-fill-available; 
+    width: -moz-available;
+    /* height:28rem; */
 }
-._cardContentCss{
+._cardsContainer{
+    max-width:100%;
+    height: 100%;
+    margin: 0 15px 16px;
+    transition: .3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 5px 5px 15px 1px rgb(0 0 0 / 10%);
+}
+@media (max-width:599px) {
+    ._cardsContainer{
+        min-width : 80%;
+        height: 90%;
+    }
+    ._cardImages{
+        height: 15rem !important;;
+    }
+    
+}
+@media screen and (min-width:600px) and (max-width:850px){
+    ._cardsContainer{
+        min-width : 50%;
+    }
+}
+/* ._cardContentCss::-webkit-scrollbar {
+    width: 1px;
+    height:1px;
+  }
+._cardContentCss::-webkit-scrollbar-thumb {
+    background: #FFA801;
+    border-radius: 5px;
+
+  } */
+/* ._cardContentCss{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    overflow-x: scroll;
-}
+    align-items: center; 
+} */
 ._cardImages{
-    margin: 0px 5px 0px 5px;
+    /* margin: 0px 5px 0px 5px;  */
+    /* width: 280px;  */
+    /* height: 340px;  */
+    width: calc(100% + 0px);
+    margin: 0;
+    height:18rem;
+    margin-top: 0!important;
 }
-.a{
+.vcenter{
+    display: inline-block;
+    vertical-align: middle;
+    float: none!important;
+}
+.gray{
+    color: #757575;
+}
+.primary{
+    color:#ff9800;
+}
+.space0{
+    margin-bottom: 0;
+}
+.textEllipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.v-align{
+    vertical-align: super;
+}
+.Parent{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.6;
+    justify-content: space-between;
+}
+.b{
+    font-size: 1.4rem;
+}
+.c{
+    display: flex;
+    justify-content: flex-start;
+    max-width: 18rem;
+    flex-wrap: wrap;
+}
+.d{
+    display: inline-flex;
+    flex-grow: 1;
+    align-items: center;
+    padding-right: 1.5rem;
+    margin-left: 0;
+    white-space: nowrap;
+}
+@media (max-width:768px){
+    .d{
+        padding-right: .5rem;
+    }
+}
+@media (max-width:1366px){
+    .d{
+        font-size: 1.4rem;
+    }
+}
+.c1{
+    width: 2.4rem; 
+    height:2.4rem;
+    min-width: 2.4rem;
+}
+@media (max-width:768px){
+    .c1{
+        width:1.6rem;
+        height:1.6rem;
+        min-width:1.6rem;
+    }
+   
+}
+._0{
+    margin-right: .3rem;
+    }
+.b6{
+    height: 1.5rem;
+    line-height: 1.5rem;
+}
+._BannerContainer{
     z-index: 0 ;
     background: rgb(72, 72, 72) ;
     border: 0px none ;
@@ -104,24 +242,32 @@ mat-tab-group p {
     text-align: left ;
     text-decoration: none ;
     width: 100% ;
-    border-radius: 16px ;
+    margin: 0 15px 16px;
+    /* border-radius: 16px ; */
 }
 
-.a{
+._BannerContainer{
     overflow: clip ;
     height: 250px;
+    margin: 0 0px 16px;
+    /* border-radius: 10px; */
 
 }
 @media (max-width: 743px){
-    .a{
+    ._BannerContainer{
         min-width: 220px ;
         height: 200px ;
+        margin: 0 0px 16px;
+        border-radius: 10px;
     }
 }
 
-.c{
+._imageBannerContainer{
     position: absolute ;
     inset: -1px 0px ;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
 }
 /* .d{
     display: inline-block ;
@@ -135,7 +281,7 @@ mat-tab-group p {
     height: 100% ;
     width: 100% ;
 } */
-.f{
+._ContentBannerContainer{
     -webkit-box-align: center ;
     position: absolute ;
     top: 0px ;
@@ -145,29 +291,29 @@ mat-tab-group p {
     text-align: center ;
     width: 100% ;
     padding-top: 32px ;
-    padding-left: 32px ;
-    padding-right: 32px ;
+    /* padding-left: 32px ;
+    padding-right: 32px ; */
     z-index: 1 ;
 }
 @media (max-width: 743px){
-    .f {
+    ._ContentBannerContainer {
         position: absolute ;
         inset: -1px 0px ;
     }
 }
-.g{
+._titleBanner{
     white-space: pre-wrap ;
     font-weight: 600 ;
     font-size: 20px ;
     line-height: 24px ;
 }
 @media (min-width: 375px){
-    .g {
+    ._titleBanner {
         font-size: 30px ;
         line-height: 36px ;
     }
 }
-.h{
+._PGraphBanner{
     font-size: 14px ;
     line-height: 16px ;
     padding-top: 8px ;
@@ -175,30 +321,30 @@ mat-tab-group p {
 }
 @media (min-width: 375px)
 {
-    .h {
+    ._PGraphBanner{
         font-size: 16px ;
         line-height: 20px ;}
 }
-.i{
+._buttonBanner{
     margin-top: 16px ;
 }
-g{
-    cursor: pointer ;
-    display: inline-block ;
-    margin: 0px ;
-    position: relative ;
-    text-align: center ;
-    text-decoration: none ;
-    width: auto ;
-    touch-action: manipulation ;
-    font-weight: 600 ;
-    font-size: 14px ;
-    line-height: 18px ;
-    letter-spacing: normal ;
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif ;
-    color: rgb(72, 72, 72) ;
-    padding: 9px 16px ;
-    border: 0px ;
-    background: #FFFFFF ;
-    border-radius: 8px ;
+._buttonBannerCss{
+    cursor: pointer;
+    /* display: inline-block; */
+    /* margin: 0px; */
+    /* position: relative; */
+    /* text-align: center; */
+    /* text-decoration: none; */
+    /* width: auto; */
+    /* touch-action: manipulation; */
+    font-weight: 600;
+    /* font-size: 14px; */
+    /* line-height: 18px; */
+    /* letter-spacing: normal; */
+    /* font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif; */
+    /* color: rgb(72, 72, 72); */
+    padding: 9px 16px;
+    border: 0px;
+    background: #FFFFFF;
+    border-radius: 8px;
 }

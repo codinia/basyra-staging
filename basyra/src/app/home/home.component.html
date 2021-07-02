@@ -5,29 +5,27 @@
         <p>Welcome to material angular owner account application</p>
     </div>
     <p>In this application we are going to work with:</p> -->
-    <div class="demo-include">
+    <div>
         <div class="hero-header">
             <div fxLayout>
-                <div class="_fullScreenView" fxHide fxShow.gt-xs fxFlex>
-                        <h1 style="color: white;">Basyra.<br>Explore New Places</h1> 
-                        <li style="list-style-type: none; display: flex; justify-content: space-evenly;">
-                            <ul style="
-                           padding-inline-start: 0px;"><a mat-raised-button style="color: white; min-width: 150px; border: 1px solid white;"  color="primary" >Post</a>
+                <div  fxHide fxShow.gt-xs fxFlex>
+                        <h1 class="headingHeroHeader">Basyra<br>Explore New Places</h1> 
+                        <li class="_fullViewButtonCsslist">
+                            <ul class="p_InlineStart"><a mat-raised-button class="_postButtonCss"  color="primary" >Post</a>
                             </ul>
-                           <ul style="padding-inline-start: 0px;"><a mat-raised-button style="color: #FFA801; min-width: 150px; border: 1px solid #FFA801;">FIND</a></ul>
+                           <ul class="p_InlineStart"><a mat-raised-button class="_findButtonCss">FIND</a></ul>
                         </li>
                 </div>
                 <!-- <div fxHide-gt-sm fxFlex>
                     Shown on small and medium.<br>
                     Hidden on gt-sm devices.
                 </div> -->
-                <div class="_smallScreenView" fxHide.gt-xs fxShow-xs fxFlex>
-                    <h1 style="color: white;">Basyra<br>
-                    Explore New Places</h1>
-                    <li style="list-style-type: none; ">
-                        <ul style="padding-inline-start: 0px;"><a mat-raised-button style="color: white; min-width: 150px; border: 1px solid white;"  color="primary" >Post</a>
+                <div fxHide.gt-xs fxShow-xs fxFlex>
+                    <h1 class="headingHeroHeader">Basyra<br>Explore New Places</h1>
+                    <li class="_smallViewButtonCsslist">
+                        <ul class="p_InlineStart"><a mat-raised-button class="_postButtonCss" color="primary" >Post</a>
                         </ul>
-                       <ul style="padding-inline-start: 0px;"><a mat-raised-button style="color: #FFA801; min-width: 150px; border: 1px solid #FFA801">FIND</a></ul>
+                       <ul class="p_InlineStart"><a mat-raised-button class="_findButtonCss">FIND</a></ul>
                     </li>
                 </div>
                 <!-- <div fxHide fxShow.lt-md fxFlex="100%">
@@ -37,43 +35,341 @@
             </div>
         </div>
     </div>
-   
-    <mat-card class="tp-card">
-        <mat-card-header>
-            <h1>HTML</h1>
-        </mat-card-header>
-        <mat-card-content class = "_cardContentCss">
-            <img class="_cardImages"  src = "https://www.tutorialspoint.com/materialize/src/html5-mini-logo.jpg" alt = "Learn HTML5">
-            <img class="_cardImages"  src = "https://www.tutorialspoint.com/materialize/src/html5-mini-logo.jpg" alt = "Learn HTML5">
-            <img class="_cardImages" src = "https://www.tutorialspoint.com/materialize/src/html5-mini-logo.jpg" alt = "Learn HTML5">
-    
-        </mat-card-content>
-    </mat-card>
 
+    <!--Card  Hostel section-->
+    <div style="height:100%" fxLayout = "row wrap" fxLayoutAlign="center center">
+        <div style="height: 100%;" fxFlex = "80%" fxFlex.lt-md="100%">
+            <section>
+                <h1>Hostel</h1>
+                <div fxLayout="row inline" class="_cardSectionContainer">
+                    <mat-card class="_cardsContainer">
+                        
+                        <mat-card-content  fxLayout="row" fxLayoutAlign="center none" >
+                            <img mat-card-image class="_cardImages" src = "../../assets/images/designs/dummy/3..jpg" alt = "Learn about hostel service">        
+                        </mat-card-content>
+                        <mat-card-header>
+                            <mat-card-title>Hostel on rent</mat-card-title>
+                            <mat-card-subtitle style="margin-bottom: 0;">D-12/1, Islamabad</mat-card-subtitle>
+                        </mat-card-header>
+        
+        
+                        <mat-card>
+                            <div fxLayout="row inline">
+                                <div fxLayout="row" fxLayout.sm="column" style="display: inline-block;
+                                width: 100%;
+                                height: 100%;">
+                                    <div fxFlex class="vcenter" style="display: inline-block;
+                                    height: 100%;
+                                    padding:10px 10px;">
+        <div class="Parent">
+            <div class="b">
+                <div class="c">
+                    <span class="d">
+                        <span class="c1 _0"><mat-icon class="material-icons-outlined ">
+                            king_bed
+                        </mat-icon></span>
+                        <span class="gray">
+                            <span class="v-align b6"> 4 </span>
+                        </span>
+                    </span>
+        
+                    <span class="d">
+                        <span class="c1 _0"><mat-icon class="material-icons-outlined ">
+                            bathtub
+                        </mat-icon></span>
+                        <span class="gray ">
+                            <span class="v-align b6"> 4 </span>
+                        </span>
+                    </span>
+        
+                    <span class="d">
+                        <span class="c1 _0"><mat-icon > restaurant</mat-icon></span>
+                        <span class="gray ">
+                            <span class="v-align b6"> 4 </span>
+                        </span>
+                    </span>
+                    
+                </div>
+        
+            </div>
+            
+            <!-- <span>
+            <mat-icon class="material-icons-outlined">
+                king_bed
+            </mat-icon>
+            <span class="gray">
+                <span class="v-align"> 4 </span>
+            </span>
+        </span>
+           <span>
+            <mat-icon class="material-icons-outlined">
+                bathtub
+            </mat-icon>
+            <span class="gray">
+                <span class="v-align"> 4 </span>
+            </span>
+        </span>
+        <span>
+            <mat-icon> restaurant</mat-icon>
+            <span class="gray">
+                <span class="v-align"> 2</span>
+            </span>
+        </span> -->
+        </div>
+                                        <p class="space0">
+                                            <span>
+                                                <span class="gray">PKR</span>
+                                                <span class="primary" style="font-size:22px;">
+                                                    80.44 lac
+                                                </span>
+                                        </span>
+            
+                                        </p>
+                                    </div>
+                                    <!-- <div fxFlex class="vcenter" style="display: inline-block;
+                                    width: 30%;
+                                    height: 100%;
+                                    text-align: center; padding:0 10px;
+                                    ">
+                                    <img style="max-width: -webkit-fill-available;
+                                    height: inherit;" src="../../assets/images/designs/dummy/4..png">
+                                       
+                                    </div> -->
+                                </div>
+                            </div>
+                            
+                        </mat-card>
+                       
+                    </mat-card>
+                    <mat-card class="_cardsContainer">
+                        
+                        <mat-card-content  fxLayout="row" fxLayoutAlign="center none" >
+                            <img mat-card-image class="_cardImages" src = "../../assets/images/designs/dummy/3..jpg" alt = "Learn about hostel service">        
+                        </mat-card-content>
+                        <mat-card-header>
+                            <mat-card-title>Hostel on rent</mat-card-title>
+                            <mat-card-subtitle style="margin-bottom: 0;">D-12/1, Islamabad</mat-card-subtitle>
+                        </mat-card-header>
+        
+        
+                        <mat-card>
+                            <div fxLayout="row inline">
+                                <div fxLayout="row" fxLayout.sm="column" style="display: inline-block;
+                                width: 100%;
+                                height: 100%;">
+                                    <div fxFlex class="vcenter" style="display: inline-block;
+                                    height: 100%;
+                                    padding:10px 10px;">
+        <div class="Parent">
+            <div class="b">
+                <div class="c">
+                    <span class="d">
+                        <span class="c1 _0"><mat-icon class="material-icons-outlined ">
+                            king_bed
+                        </mat-icon></span>
+                        <span class="gray">
+                            <span class="v-align b6"> 4 </span>
+                        </span>
+                    </span>
+        
+                    <span class="d">
+                        <span class="c1 _0"><mat-icon class="material-icons-outlined ">
+                            bathtub
+                        </mat-icon></span>
+                        <span class="gray ">
+                            <span class="v-align b6"> 4 </span>
+                        </span>
+                    </span>
+        
+                    <span class="d">
+                        <span class="c1 _0"><mat-icon > restaurant</mat-icon></span>
+                        <span class="gray ">
+                            <span class="v-align b6"> 4 </span>
+                        </span>
+                    </span>
+                    
+                </div>
+        
+            </div>
+            
+            <!-- <span>
+            <mat-icon class="material-icons-outlined">
+                king_bed
+            </mat-icon>
+            <span class="gray">
+                <span class="v-align"> 4 </span>
+            </span>
+        </span>
+           <span>
+            <mat-icon class="material-icons-outlined">
+                bathtub
+            </mat-icon>
+            <span class="gray">
+                <span class="v-align"> 4 </span>
+            </span>
+        </span>
+        <span>
+            <mat-icon> restaurant</mat-icon>
+            <span class="gray">
+                <span class="v-align"> 2</span>
+            </span>
+        </span> -->
+        </div>
+                                        <p class="space0">
+                                            <span>
+                                                <span class="gray">PKR</span>
+                                                <span class="primary" style="font-size:22px;">
+                                                    80.44 lac
+                                                </span>
+                                        </span>
+            
+                                        </p>
+                                    </div>
+                                    <!-- <div fxFlex class="vcenter" style="display: inline-block;
+                                    width: 30%;
+                                    height: 100%;
+                                    text-align: center; padding:0 10px;
+                                    ">
+                                    <img style="max-width: -webkit-fill-available;
+                                    height: inherit;" src="../../assets/images/designs/dummy/4..png">
+                                       
+                                    </div> -->
+                                </div>
+                            </div>
+                            
+                        </mat-card>
+                       
+                    </mat-card>
+                    <mat-card class="_cardsContainer">
+                        
+                        <mat-card-content  fxLayout="row" fxLayoutAlign="center none" >
+                            <img mat-card-image class="_cardImages" src = "../../assets/images/designs/dummy/3..jpg" alt = "Learn about hostel service">        
+                        </mat-card-content>
+                        <mat-card-header>
+                            <mat-card-title>Hostel on rent</mat-card-title>
+                            <mat-card-subtitle style="margin-bottom: 0;">D-12/1, Islamabad</mat-card-subtitle>
+                        </mat-card-header>
+        
+        
+                        <mat-card>
+                            <div fxLayout="row inline">
+                                <div fxLayout="row" fxLayout.sm="column" style="display: inline-block;
+                                width: 100%;
+                                height: 100%;">
+                                    <div fxFlex class="vcenter" style="display: inline-block;
+                                    height: 100%;
+                                    padding:10px 10px;">
+        <div class="Parent">
+            <div class="b">
+                <div class="c">
+                    <span class="d">
+                        <span class="c1 _0"><mat-icon class="material-icons-outlined ">
+                            king_bed
+                        </mat-icon></span>
+                        <span class="gray">
+                            <span class="v-align b6"> 4 </span>
+                        </span>
+                    </span>
+        
+                    <span class="d">
+                        <span class="c1 _0"><mat-icon class="material-icons-outlined ">
+                            bathtub
+                        </mat-icon></span>
+                        <span class="gray ">
+                            <span class="v-align b6"> 4 </span>
+                        </span>
+                    </span>
+        
+                    <span class="d">
+                        <span class="c1 _0"><mat-icon > restaurant</mat-icon></span>
+                        <span class="gray ">
+                            <span class="v-align b6"> 4 </span>
+                        </span>
+                    </span>
+                    
+                </div>
+        
+            </div>
+            
+            <!-- <span>
+            <mat-icon class="material-icons-outlined">
+                king_bed
+            </mat-icon>
+            <span class="gray">
+                <span class="v-align"> 4 </span>
+            </span>
+        </span>
+           <span>
+            <mat-icon class="material-icons-outlined">
+                bathtub
+            </mat-icon>
+            <span class="gray">
+                <span class="v-align"> 4 </span>
+            </span>
+        </span>
+        <span>
+            <mat-icon> restaurant</mat-icon>
+            <span class="gray">
+                <span class="v-align"> 2</span>
+            </span>
+        </span> -->
+        </div>
+                                        <p class="space0">
+                                            <span>
+                                                <span class="gray">PKR</span>
+                                                <span class="primary" style="font-size:22px;">
+                                                    80.44 lac
+                                                </span>
+                                        </span>
+            
+                                        </p>
+                                    </div>
+                                    <!-- <div fxFlex class="vcenter" style="display: inline-block;
+                                    width: 30%;
+                                    height: 100%;
+                                    text-align: center; padding:0 10px;
+                                    ">
+                                    <img style="max-width: -webkit-fill-available;
+                                    height: inherit;" src="../../assets/images/designs/dummy/4..png">
+                                       
+                                    </div> -->
+                                </div>
+                            </div>
+                            
+                        </mat-card>
+                       
+                    </mat-card>
+                  
+                </div>
+               
+            </section>
+        </div>
+    </div>
+  
+    
+
+    <!--Bannner Section-->
     <div>
-        <div class="a">
+        <div class="_BannerContainer">
             <a href="#">
-                <div class="b" style="padding-top: 125%;"></div>
-                <div class="c" style="height: 100%;
-                width: 100%;
-                background-size: cover;">
-                    <!-- <div class="d">
+                <!-- <div class="b" style="padding-top: 125%;"></div> -->
+                <div class="_imageBannerContainer" >
+                    <div class="d">
                         <picture>
                             <img class="e" aria-hidden="true" alt="" decoding="async" loading="lazy" src="https://a0.muscache.com/im/pictures/791aba62-2de8-4722-99b5-45838715eb34.jpg?im_q=medq&amp;im_w=720" style="position: absolute; left: 0px; right: 0px; object-fit: cover; object-position: 50% 50%; vertical-align: bottom;">
                         </picture>
-                    </div> -->
-
-                </div>
-                <div class="f">
-                    <div class="g">
-                        <span style="color: rgb(255, 255, 255);">Try hosting</span>
                     </div>
-                    <div class="h">
-                        <span style="color: rgb(255, 255, 255);">Earn extra income and unlock new opportunities by sharing 
+                </div>
+                <div class="_ContentBannerContainer">
+                    <div class="_titleBanner">
+                        <span class="_colorWhite">Try hosting</span>
+                    </div>
+                    <div class="_PGraphBanner">
+                        <span class="_colorWhite">Earn extra income and unlock new opportunities by sharing 
                             your space.</span>
                     </div>
-                    <div class="i">
-                        <button type="button" class="j">
+                    <div class="_buttonBanner">
+                        <button type="button" class="_buttonBannerCss">
                             <span style="color: rgb(34, 34, 34);">Learn more</span>
                         </button>
 
@@ -85,6 +381,366 @@
             </a>
         </div>
     </div>
+    
+    <!--Card Flats section-->
+    <div style="height:100%" fxLayout = "row wrap" fxLayoutAlign="center center">
+        <div style="height: 100%;" fxFlex = "80%" fxFlex.lt-md="100%">
+            <section>
+                <h1>Flats</h1>
+                <div fxLayout="row inline" class="_cardSectionContainer">
+                    <mat-card class="_cardsContainer">
+                        
+                        <mat-card-content  fxLayout="row" fxLayoutAlign="center none" >
+                            <img mat-card-image class="_cardImages" src = "../../assets/images/designs/dummy/3..jpg" alt = "Learn about hostel service">        
+                        </mat-card-content>
+                        <mat-card-header>
+                            <mat-card-title>Flat on rent</mat-card-title>
+                            <mat-card-subtitle style="margin-bottom: 0;">D-12/1, Islamabad</mat-card-subtitle>
+                        </mat-card-header>
+        
+        
+                        <mat-card>
+                            <div fxLayout="row inline">
+                                <div fxLayout="row" fxLayout.sm="column" style="display: inline-block;
+                                width: 100%;
+                                height: 100%;">
+                                    <div fxFlex class="vcenter" style="display: inline-block;
+                                    height: 100%;
+                                    padding:10px 10px;">
+        <div class="Parent">
+            <div class="b">
+                <div class="c">
+                    <span class="d">
+                        <span class="c1 _0"><mat-icon class="material-icons-outlined ">
+                            king_bed
+                        </mat-icon></span>
+                        <span class="gray">
+                            <span class="v-align b6"> 4 </span>
+                        </span>
+                    </span>
+        
+                    <span class="d">
+                        <span class="c1 _0"><mat-icon class="material-icons-outlined ">
+                            bathtub
+                        </mat-icon></span>
+                        <span class="gray ">
+                            <span class="v-align b6"> 4 </span>
+                        </span>
+                    </span>
+        
+                    <span class="d">
+                        <span class="c1 _0"><mat-icon > restaurant</mat-icon></span>
+                        <span class="gray ">
+                            <span class="v-align b6"> 4 </span>
+                        </span>
+                    </span>
+                    
+                </div>
+        
+            </div>
+            
+            <!-- <span>
+            <mat-icon class="material-icons-outlined">
+                king_bed
+            </mat-icon>
+            <span class="gray">
+                <span class="v-align"> 4 </span>
+            </span>
+        </span>
+           <span>
+            <mat-icon class="material-icons-outlined">
+                bathtub
+            </mat-icon>
+            <span class="gray">
+                <span class="v-align"> 4 </span>
+            </span>
+        </span>
+        <span>
+            <mat-icon> restaurant</mat-icon>
+            <span class="gray">
+                <span class="v-align"> 2</span>
+            </span>
+        </span> -->
+        </div>
+                                        <p class="space0">
+                                            <span>
+                                                <span class="gray">PKR</span>
+                                                <span class="primary" style="font-size:22px;">
+                                                    80.44 lac
+                                                </span>
+                                        </span>
+            
+                                        </p>
+                                    </div>
+                                    <!-- <div fxFlex class="vcenter" style="display: inline-block;
+                                    width: 30%;
+                                    height: 100%;
+                                    text-align: center; padding:0 10px;
+                                    ">
+                                    <img style="max-width: -webkit-fill-available;
+                                    height: inherit;" src="../../assets/images/designs/dummy/4..png">
+                                       
+                                    </div> -->
+                                </div>
+                            </div>
+                            
+                        </mat-card>
+                       
+                    </mat-card>
+                    <mat-card class="_cardsContainer">
+                        
+                        <mat-card-content  fxLayout="row" fxLayoutAlign="center none" >
+                            <img mat-card-image class="_cardImages" src = "../../assets/images/designs/dummy/3..jpg" alt = "Learn about hostel service">        
+                        </mat-card-content>
+                        <mat-card-header>
+                            <mat-card-title>Flat on rent</mat-card-title>
+                            <mat-card-subtitle style="margin-bottom: 0;">D-12/1, Islamabad</mat-card-subtitle>
+                        </mat-card-header>
+        
+        
+                        <mat-card>
+                            <div fxLayout="row inline">
+                                <div fxLayout="row" fxLayout.sm="column" style="display: inline-block;
+                                width: 100%;
+                                height: 100%;">
+                                    <div fxFlex class="vcenter" style="display: inline-block;
+                                    height: 100%;
+                                    padding:10px 10px;">
+        <div class="Parent">
+            <div class="b">
+                <div class="c">
+                    <span class="d">
+                        <span class="c1 _0"><mat-icon class="material-icons-outlined ">
+                            king_bed
+                        </mat-icon></span>
+                        <span class="gray">
+                            <span class="v-align b6"> 4 </span>
+                        </span>
+                    </span>
+        
+                    <span class="d">
+                        <span class="c1 _0"><mat-icon class="material-icons-outlined ">
+                            bathtub
+                        </mat-icon></span>
+                        <span class="gray ">
+                            <span class="v-align b6"> 4 </span>
+                        </span>
+                    </span>
+        
+                    <span class="d">
+                        <span class="c1 _0"><mat-icon > restaurant</mat-icon></span>
+                        <span class="gray ">
+                            <span class="v-align b6"> 4 </span>
+                        </span>
+                    </span>
+                    
+                </div>
+        
+            </div>
+            
+            <!-- <span>
+            <mat-icon class="material-icons-outlined">
+                king_bed
+            </mat-icon>
+            <span class="gray">
+                <span class="v-align"> 4 </span>
+            </span>
+        </span>
+           <span>
+            <mat-icon class="material-icons-outlined">
+                bathtub
+            </mat-icon>
+            <span class="gray">
+                <span class="v-align"> 4 </span>
+            </span>
+        </span>
+        <span>
+            <mat-icon> restaurant</mat-icon>
+            <span class="gray">
+                <span class="v-align"> 2</span>
+            </span>
+        </span> -->
+        </div>
+                                        <p class="space0">
+                                            <span>
+                                                <span class="gray">PKR</span>
+                                                <span class="primary" style="font-size:22px;">
+                                                    80.44 lac
+                                                </span>
+                                        </span>
+            
+                                        </p>
+                                    </div>
+                                    <!-- <div fxFlex class="vcenter" style="display: inline-block;
+                                    width: 30%;
+                                    height: 100%;
+                                    text-align: center; padding:0 10px;
+                                    ">
+                                    <img style="max-width: -webkit-fill-available;
+                                    height: inherit;" src="../../assets/images/designs/dummy/4..png">
+                                       
+                                    </div> -->
+                                </div>
+                            </div>
+                            
+                        </mat-card>
+                       
+                    </mat-card>
+                    <mat-card class="_cardsContainer">
+                        
+                        <mat-card-content  fxLayout="row" fxLayoutAlign="center none" >
+                            <img mat-card-image class="_cardImages" src = "../../assets/images/designs/dummy/3..jpg" alt = "Learn about hostel service">        
+                        </mat-card-content>
+                        <mat-card-header>
+                            <mat-card-title>Flat on rent</mat-card-title>
+                            <mat-card-subtitle style="margin-bottom: 0;">D-12/1, Islamabad</mat-card-subtitle>
+                        </mat-card-header>
+        
+        
+                        <mat-card>
+                            <div fxLayout="row inline">
+                                <div fxLayout="row" fxLayout.sm="column" style="display: inline-block;
+                                width: 100%;
+                                height: 100%;">
+                                    <div fxFlex class="vcenter" style="display: inline-block;
+                                    height: 100%;
+                                    padding:10px 10px;">
+        <div class="Parent">
+            <div class="b">
+                <div class="c">
+                    <span class="d">
+                        <span class="c1 _0"><mat-icon class="material-icons-outlined ">
+                            king_bed
+                        </mat-icon></span>
+                        <span class="gray">
+                            <span class="v-align b6"> 4 </span>
+                        </span>
+                    </span>
+        
+                    <span class="d">
+                        <span class="c1 _0"><mat-icon class="material-icons-outlined ">
+                            bathtub
+                        </mat-icon></span>
+                        <span class="gray ">
+                            <span class="v-align b6"> 4 </span>
+                        </span>
+                    </span>
+        
+                    <span class="d">
+                        <span class="c1 _0"><mat-icon > restaurant</mat-icon></span>
+                        <span class="gray ">
+                            <span class="v-align b6"> 4 </span>
+                        </span>
+                    </span>
+                    
+                </div>
+        
+            </div>
+            
+            <!-- <span>
+            <mat-icon class="material-icons-outlined">
+                king_bed
+            </mat-icon>
+            <span class="gray">
+                <span class="v-align"> 4 </span>
+            </span>
+        </span>
+           <span>
+            <mat-icon class="material-icons-outlined">
+                bathtub
+            </mat-icon>
+            <span class="gray">
+                <span class="v-align"> 4 </span>
+            </span>
+        </span>
+        <span>
+            <mat-icon> restaurant</mat-icon>
+            <span class="gray">
+                <span class="v-align"> 2</span>
+            </span>
+        </span> -->
+        </div>
+                                        <p class="space0">
+                                            <span>
+                                                <span class="gray">PKR</span>
+                                                <span class="primary" style="font-size:22px;">
+                                                    80.44 lac
+                                                </span>
+                                        </span>
+            
+                                        </p>
+                                    </div>
+                                    <!-- <div fxFlex class="vcenter" style="display: inline-block;
+                                    width: 30%;
+                                    height: 100%;
+                                    text-align: center; padding:0 10px;
+                                    ">
+                                    <img style="max-width: -webkit-fill-available;
+                                    height: inherit;" src="../../assets/images/designs/dummy/4..png">
+                                       
+                                    </div> -->
+                                </div>
+                            </div>
+                            
+                        </mat-card>
+                       
+                    </mat-card>
+                  
+                </div>
+               
+            </section>
+        </div>
+    </div>
+
+     <!--Bannner Section-->
+     <div>
+        <div class="_BannerContainer">
+            <div fxLayout="row" style="height: 100%;">
+                <div fxFlex="30" style="text-align: center;  align-self: center;" >
+                    <mat-icon style="font-size: xxx-large; color: orange;">notifications_active</mat-icon>
+                </div>
+                
+                <div fxFlex style="align-self: center;"> 
+                    <div > <!--class="_ContentBannerContainer"-->
+
+                    
+                        <div class="_titleBanner"> <!--class="_titleBanner"-->
+                            <span class="_colorWhite">Try hosting</span>
+                        </div>
+
+                        <div class="_PGraphBanner"> <!--class="_PGraphBanner"-->
+                    
+                         <span class="_colorWhite">Having trouble finding the right property now?</span>
+                        </div>
+                    
+                    </div>
+                </div>
+               
+            
+           
+
+            
+            
+            
+            
+                <div fxFlex="30" style="align-self: center;">
+                    <div class="_buttonBanner"> <!--class="_buttonBanner"-->
+                
+                        <button type="button" class="_buttonBannerCss"> <!--class="_buttonBannerCss"-->
+                         <span style="color: rgb(34, 34, 34);">Learn more</span>
+                        </button>
+
+                     </div></div>
+            
+            </div>
+                
+        </div>
+    </div>
+
+
+
+
+
     
     <mat-tab-group (selectedTabChange)="executeSelectedChange($event)">
         <mat-tab label="Material Components">
