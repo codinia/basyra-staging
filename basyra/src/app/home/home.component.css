@@ -101,6 +101,9 @@ mat-tab-group {
 mat-tab-group p {
     padding-top: 20px;
 }
+.h-100{
+    height:100%;
+}
 ._cardSectionContainer{
     overflow-x: auto; 
     width: -webkit-fill-available; 
@@ -156,10 +159,9 @@ mat-tab-group p {
     height:18rem;
     margin-top: 0!important;
 }
-.vcenter{
-    display: inline-block;
-    vertical-align: middle;
-    float: none!important;
+.matIcon_PadHeight{
+    padding: 10px 10px;
+    height:100%;
 }
 .gray{
     color: #757575;
@@ -178,22 +180,13 @@ mat-tab-group p {
 .v-align{
     vertical-align: super;
 }
-.Parent{
-    display: flex;
-    flex-direction: column;
-    flex-grow: 0.6;
-    justify-content: space-between;
-}
-.b{
-    font-size: 1.4rem;
-}
-.c{
+
+.matIcon_BinfoSection{
     display: flex;
     justify-content: flex-start;
-    max-width: 18rem;
     flex-wrap: wrap;
 }
-.d{
+.matIcon_outline{
     display: inline-flex;
     flex-grow: 1;
     align-items: center;
@@ -202,12 +195,12 @@ mat-tab-group p {
     white-space: nowrap;
 }
 @media (max-width:768px){
-    .d{
+    .matIcon_outline{
         padding-right: .5rem;
     }
 }
 @media (max-width:1366px){
-    .d{
+    .matIcon_outline{
         font-size: 1.4rem;
     }
 }
@@ -248,15 +241,15 @@ mat-tab-group p {
 
 ._BannerContainer{
     overflow: clip ;
-    height: 250px;
-    margin: 0 0px 16px;
-    /* border-radius: 10px; */
+    /* height: 250px; */
+    margin: 0 0px 16px; 
+     border-radius: 10px;
 
 }
 @media (max-width: 743px){
     ._BannerContainer{
         min-width: 220px ;
-        height: 200px ;
+        /* height: 200px ; */
         margin: 0 0px 16px;
         border-radius: 10px;
     }
@@ -347,4 +340,17 @@ mat-tab-group p {
     border: 0px;
     background: #FFFFFF;
     border-radius: 8px;
+    margin: 10px;
+    
 }
+@media (max-width:350px) {
+    ._buttonBannerCss{
+        padding: 9px 9px;
+    }
+}
+@media (min-width:440px) and (max-width:1022px){
+._buttonBannerCss{
+    width: 80%;
+}
+}
+
