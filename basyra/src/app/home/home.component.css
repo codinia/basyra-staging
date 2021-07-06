@@ -256,8 +256,8 @@ mat-tab-group p {
 }
 
 ._imageBannerContainer{
-    position: absolute ;
-    inset: -1px 0px ;
+    /* position: absolute ; */
+    /* inset: -1px 0px ; */
     height: 100%;
     width: 100%;
     background-size: cover;
@@ -276,8 +276,8 @@ mat-tab-group p {
 } */
 ._ContentBannerContainer{
     -webkit-box-align: center ;
-    position: absolute ;
-    top: 0px ;
+    /* position: absolute ;
+    top: 0px ; */
     display: flex ;
     flex-flow: column ;
     align-items: center ;
@@ -290,8 +290,8 @@ mat-tab-group p {
 }
 @media (max-width: 743px){
     ._ContentBannerContainer {
-        position: absolute ;
-        inset: -1px 0px ;
+        /* position: absolute ;
+        inset: -1px 0px ; */
     }
 }
 ._titleBanner{

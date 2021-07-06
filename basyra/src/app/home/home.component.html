@@ -1,6 +1,7 @@
 <!--'fxLayout' element define the flow order of the child component.
     'fxFlexalign' Works like fxLayoutAlign, but applies only to a single flexbox item, instead of all of them-->
 <section fxLayout="column" fxFlexAlign="stretch">
+    <!--Hero Header-->
     <div>
         <div class="hero-header">
             <div fxLayout>
@@ -25,6 +26,7 @@
             </div>
         </div>
     </div>
+
     <!--Card  Hostel section-->
     <div class="h-100" fxLayout = "row wrap" fxLayoutAlign="center center">
         <div class="h-100" fxFlex = "80%" fxFlex.lt-md="100%">
@@ -174,25 +176,66 @@
   
     <!--Bannner Section-->
     <div>
-        <div class="_BannerContainer">
+        <div class="_BannerContainer"  >
             <a href="#">
-                <mat-grid-list  [cols]="breakpoint" rowHeight="250px"[style.background]="'skyblue'"  gutterSize="5px" (window:resize)="onResize($event)" >
+                <!-- <md-content>
+                    <md-grid-list
+                    md-cols="2" 
+                        
+                       
+                         [style.background]="'skyblue'" >
+                        
+                         <md-grid-tile  style="height: calc(100vh - 24px)">
+                         tile 1
+                        </md-grid-tile>
+                        <md-grid-tile style="height: calc(100vh - 24px)">
+                            tile 2
+                        </md-grid-tile>
+                        
+                       
+                      </md-grid-list>
+                </md-content> -->
+               
+                <!-- <mat-grid-list  
+               
+                  rowHeight="250px"[style.background]="'skyblue'"  
+                  gutterSize="5px" (window:resize)="onResize($event)" >
                    
-                    <mat-grid-tile > 
-                
-                    <mat-grid-tile-header>
-                        <h3>hello</h3>
-                    </mat-grid-tile-header>
-                    <mat-grid-tile-footer>
-                        <h3>footer</h3>
-                        </mat-grid-tile-footer>
-                </mat-grid-tile>
+                    <mat-grid-tile>Tile 1</mat-grid-tile>
 
-                    <mat-grid-tile>Tile 2 </mat-grid-tile>
+                    <mat-grid-tile>Tile 2</mat-grid-tile>
                     
-                    </mat-grid-list>
-                <!-- <div class="_imageBannerContainer" >
-                    <div class="d">
+                </mat-grid-list> -->
+                <div class="_imageBannerContainer" style="background: orange" >
+
+                        <div  fxLayout="row" fxLayout.xs="column" style="height: inherit; width:100%; align-self: center;" >
+                            <div  style="    align-self: center;">
+                                <div class="_ContentBannerContainer"
+                                >
+                                    <div class="_titleBanner">
+                                        <span class="_colorWhite">Try hosting</span>
+                                    </div>
+                                    <div class="_PGraphBanner">
+                                        <span class="_colorWhite">Earn extra income and unlock new opportunities by sharing 
+                                            your space.</span>
+                                    </div>
+                                    <div class="_buttonBanner">
+                                        <button type="button" class="_buttonBannerCss">
+                                            <span style="color: rgb(34, 34, 34);">Learn more</span>
+                                        </button>
+                
+                                    </div>
+                
+                                </div>
+                            </div>
+                            <div>
+                                <picture>
+                                    <img  aria-hidden="true" alt="" decoding="async" loading="lazy" src="../../assets/images/demo.png" style=" object-fit: cover; object-position: 50% 50%; vertical-align: bottom;">
+                                </picture>
+                            </div>
+                        </div>
+
+                    <!-- <div class="d">
                         <picture>
                             <img class="e" aria-hidden="true" alt="" decoding="async" loading="lazy" src="https://a0.muscache.com/im/pictures/791aba62-2de8-4722-99b5-45838715eb34.jpg?im_q=medq&amp;im_w=720" style="position: absolute; left: 0px; right: 0px; object-fit: cover; object-position: 50% 50%; vertical-align: bottom;">
                         </picture>
@@ -214,7 +257,7 @@
                     </div>
 
                 </div> -->
-                
+                </div>
 
             </a>
         </div>
