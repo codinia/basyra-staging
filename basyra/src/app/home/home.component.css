@@ -1,6 +1,5 @@
 section div h1{
     font-size: 30px;
-    
     margin: 80px 0 0px 0;
     line-height: normal;
     display: flex;
@@ -9,15 +8,17 @@ section div h1{
     align-content: center;
     flex-wrap: nowrap;
     justify-content: center;
-    
+
 }
 /* div + p ===> Selects the first <p> element that is placed immediately after <div> elements */
 section div + p{
     color: #3f51b5;
     font-weight: bold;
     font-size: 20px;
-    /* padding-bottom: 20px; */
 }
+
+
+/***********************************Hero header section css */
 .hero-header{
     position: relative;
     overflow: hidden;
@@ -45,14 +46,7 @@ div.layout{
     background-repeat-y: no-repeat;
     background-position: center;
 }
-/* .hero-header > div div:nth-child(1)::before{
-    background-color: #FFA801;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-} */
+
 .hero-header > div div:nth-child(2){
     background: linear-gradient( rgba(255,168,1, 0.05) 100%, rgba(255,168,1, 0.05)100%),url('../../assets/images/designs/sale-concept-illustration.png'), radial-gradient(grey, transparent);
     width: 100%;
@@ -86,14 +80,9 @@ div.layout{
 ._colorWhite{
     color:rgb(255, 255, 255);
 }
-/* .hero-header > div div:nth-child(2)::before{
-    background-color: #FFA801;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-} */
+
+
+
 
 mat-tab-group {
     text-align: center;
@@ -101,12 +90,15 @@ mat-tab-group {
 mat-tab-group p {
     padding-top: 20px;
 }
+
+/***********************************card section css */
+
 .h-100{
     height:100%;
 }
 ._cardSectionContainer{
-    overflow-x: auto; 
-    width: -webkit-fill-available; 
+    overflow-x: auto;
+    width: -webkit-fill-available;
     width: -moz-available;
     /* height:28rem; */
 }
@@ -128,7 +120,7 @@ mat-tab-group p {
     ._cardImages{
         height: 15rem !important;;
     }
-    
+
 }
 @media screen and (min-width:600px) and (max-width:850px){
     ._cardsContainer{
@@ -148,12 +140,9 @@ mat-tab-group p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
 } */
 ._cardImages{
-    /* margin: 0px 5px 0px 5px;  */
-    /* width: 280px;  */
-    /* height: 340px;  */
     width: calc(100% + 0px);
     margin: 0;
     height:18rem;
@@ -168,6 +157,9 @@ mat-tab-group p {
 }
 .primary{
     color:#ff9800;
+}
+.primary-bgcolor{
+    background-color: #ff9800;
 }
 .space0{
     margin-bottom: 0;
@@ -205,7 +197,7 @@ mat-tab-group p {
     }
 }
 .c1{
-    width: 2.4rem; 
+    width: 2.4rem;
     height:2.4rem;
     min-width: 2.4rem;
 }
@@ -215,7 +207,7 @@ mat-tab-group p {
         height:1.6rem;
         min-width:1.6rem;
     }
-   
+
 }
 ._0{
     margin-right: .3rem;
@@ -224,6 +216,7 @@ mat-tab-group p {
     height: 1.5rem;
     line-height: 1.5rem;
 }
+/***********************************Banner section css */
 ._BannerContainer{
     z-index: 0 ;
     background: rgb(72, 72, 72) ;
@@ -241,40 +234,23 @@ mat-tab-group p {
 
 ._BannerContainer{
     overflow: clip ;
-    /* height: 250px; */
-    margin: 0 0px 16px; 
-     border-radius: 10px;
+    margin: 0 0px 16px;
+    border-radius: 10px;
 
 }
 @media (max-width: 743px){
     ._BannerContainer{
         min-width: 220px ;
-        /* height: 200px ; */
         margin: 0 0px 16px;
         border-radius: 10px;
     }
 }
 
-._imageBannerContainer{
-    /* position: absolute ; */
-    /* inset: -1px 0px ; */
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-}
-/* .d{
-    display: inline-block ;
-    vertical-align: bottom ;
-    min-height: 1px ;
-    position: relative ;
-    background-position: 50% 50% ;
-    background-repeat: no-repeat ;
-}
-.e{
-    height: 100% ;
-    width: 100% ;
-} */
 ._ContentBannerContainer{
+    width: -webkit-fill-available;
+    align-self: center;
+}
+._ContentBanner{
     -webkit-box-align: center ;
     /* position: absolute ;
     top: 0px ; */
@@ -288,12 +264,15 @@ mat-tab-group p {
     padding-right: 32px ; */
     z-index: 1 ;
 }
-@media (max-width: 743px){
-    ._ContentBannerContainer {
-        /* position: absolute ;
-        inset: -1px 0px ; */
+._TryHosting_imageCss{
+    width: 50%;
+}
+@media (max-width:599px) {
+    ._TryHosting_imageCss{
+        width: auto;
     }
 }
+
 ._titleBanner{
     white-space: pre-wrap ;
     font-weight: 600 ;
@@ -320,6 +299,7 @@ mat-tab-group p {
 }
 ._buttonBanner{
     margin-top: 16px ;
+    margin-bottom: 16px;
 }
 ._buttonBannerCss{
     cursor: pointer;
@@ -336,21 +316,246 @@ mat-tab-group p {
     /* letter-spacing: normal; */
     /* font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif; */
     /* color: rgb(72, 72, 72); */
-    padding: 9px 16px;
+    padding: 9px 40px;
     border: 0px;
     background: #FFFFFF;
     border-radius: 8px;
     margin: 10px;
-    
+    width: calc(100% - 1em);
 }
-@media (max-width:350px) {
-    ._buttonBannerCss{
-        padding: 9px 9px;
+@media  (max-width:768px){
+._buttonBannerCss{
+    padding: 9px 16px;
+}
+}
+._getNotifyButton{
+    display: flex;
+    /* flex-direction: column;
+    align-items: center; */
+}
+@media (max-width:594px){
+    ._getNotifyButton{
+        flex-direction: column;
+        align-items: center;
     }
 }
-@media (min-width:440px) and (max-width:1022px){
-._buttonBannerCss{
-    width: 80%;
+
+
+/**/
+.promoContent{
+ padding: 0 16px 49px;
 }
+.promo-title{
+
+    font-family: "HelveticaNeue-Bold","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 48px;
+
+}
+.promo-text{
+    font-family: "Helvetica Neue","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 15px;
+    max-width: initial;
 }
 
+.store-buttons{
+    font-size: 0;
+}
+.app-store .google-play{
+    display: block;
+    margin-top: 41px;
+}
+
+.app-store-image {
+    background-image: url(../../assets/images/app_store.svg);
+    width: 127px;
+    height: 41px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.google-play-image{
+    background-image: url(../../assets/images/google-play-badge.png);
+    width: 140px;
+    height: 41px;
+    background-position: -9px -9px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.promoContentImage{
+    background-image: url(../../assets/images/mobile-transparent.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* width: 140px; */
+    height: 400px;
+    background-position: 150px 0px;
+}
+@media (max-width:455px){
+.promoContentImage{
+    background-position: 0px 50px;
+}
+}
+@media screen and (min-width:456px) and (max-width:420px){
+    .promoContentImage{
+background-position: 0px 20px;
+    }
+}
+@media  screen and (min-width: 421px) and (max-width: 786px){
+    .promoContentImage{
+        background-position: 0px 0px;
+    }
+}
+
+@media (min-width:48em) {
+    .promoContent{
+        padding: 0 0 49px;
+    }
+    .promo-title{
+        max-width: initial;
+        font-size: 32px;
+        line-height: 40px;
+        margin-top: 73px;
+    }
+
+    .app-store{
+    display: inline-block;
+    margin-top: 32px;
+    }
+    .app-store-image{
+    width: 94px;
+    height: 30px;
+    }
+    .google-play{
+        display: inline-block;
+     margin-top: 32px;
+    }
+    .google-play-image{
+        width: 111px;
+    height: 30px;
+    background-position: -7px -7px;
+    }
+    }
+
+    /* footer section */
+
+    .footerContainer{
+        padding: 40px 0px 40px;
+    }
+    .footerColor{
+        background: rgb(72, 72, 72) ;
+    }
+    @media (min-width: 64em){
+        .footerContainer{
+            padding: 40px 0 0;
+        }
+    }
+
+
+.footerLayout{
+    margin-right:auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 67.5em;
+    max-width: min(100%, 67.5em);
+}
+
+@media (min-width:48em){
+    .footerLayout_mobileEdges{
+        padding-left: 1.875em;
+        padding-right: 1.875em;
+    }
+}
+@media (min-width: 40em) and (max-width: 47.9375em){
+    .footerLayout_mobileEdges{
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
+@media (min-width: 0) and (max-width: 39.9375em){
+    .footerLayout_mobileEdges{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+.footer_primary_links{
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+.footer-navigation-column{
+    width: 100%;
+    padding-top: 54px;
+}
+.footer-navigation-column__title{
+    font-size: 13px;
+    font-family: HelveticaNeue-Bold,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    color:white;
+}
+.footer-navigation-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-navigation-list{
+    font-size: 12px;
+    line-height: 16px;
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Helvetica Neue','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 400;
+}
+.footer-privacy-menu{
+    display: flex;
+    padding: 40px 0 16px;
+    font-family: 'HelveticaNeue','Helvetica Neue','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 12px;
+    color: rgb(122, 115, 115);
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 0) and (max-width: 47.9375em)
+{
+    .footer-privacy-menu{
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    }
+}
+.footer-privacy-menu__link{
+    margin: 0 12px;
+    color: inherit;
+    text-decoration: none;
+}
+.footer-privacy-menu__copyright{
+    margin: 0 12px;
+}
+.footer-social-media-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    font-size: 1px;
+}
+.colorWhite{
+    color: #fff;
+}
+.footer-social-media-sites__link{
+    margin-right: 5px;
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+.footer-social-media-sites__icon{
+    height: 16px;
+    width: 16px;
+    margin: 5px;
+    fill: currentColor;
+}
