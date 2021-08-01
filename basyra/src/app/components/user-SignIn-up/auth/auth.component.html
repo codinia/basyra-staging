@@ -1,0 +1,5 @@
+<p>auth works!</p>
+
+
+<app-log-in  (openRegComponent)="modalType($event)" *ngIf="modal_type ==1"></app-log-in>
+<app-register  (openLogInComponent)="modalType($event)" *ngIf="modal_type ==2"></app-register>

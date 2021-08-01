@@ -24,11 +24,11 @@
         <ul fxLayout fxLayoutGap="15px" class="navigation-items" >
             <li>
                 
-                <a  routerLink="/becomeHost" mat-raised-button style="color: #ff9800; ">Become a host</a>
+                <a  routerLink="/becomeHost" (click)="becomeHost()" mat-raised-button style="color: #ff9800; ">Become a host</a>
 
             </li>
             <li>
-                <a routerLink="/account" ><mat-icon style="margin-top: 6px; background-color: #ff9800; ">account_circle</mat-icon></a>
+                <a routerLink="/account" (click)="onclick()"><mat-icon style="margin-top: 6px; background-color: #ff9800; ">account_circle</mat-icon></a>
             </li>
         </ul>
     </div>

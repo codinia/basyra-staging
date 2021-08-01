@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -11,6 +11,10 @@ import { MaterialModule } from './material/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FooterComponent } from './navigation/footer/footer.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { LogInComponent } from './components/user-SignIn-up/log-in/log-in.component';
+import { RegisterComponent } from './components/user-SignIn-up/register/register.component';
+import { AuthComponent } from './components/user-SignIn-up/auth/auth.component';
+import { AddPropertyComponent } from './components/add-property/add-property.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +24,10 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
     HomeComponent,
     FooterComponent,
     SidenavListComponent,
+    LogInComponent,
+    RegisterComponent,
+    AuthComponent,
+    AddPropertyComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +40,8 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
     
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
+  entryComponents:[AuthComponent]
 })
 export class AppModule { }
