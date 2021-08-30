@@ -1,10 +1,120 @@
 <p>add-property works!</p>
-<section>
-    <h3 style="margin-top: 20px; font-size: 24px; font-weight: 700;">Add property</h3>
-    <p style="font-size: 18px; margin-bottom: 25px; ">Enter property details to add your property</p>
-</section>
+<div class="layout-wrapper" fxLayout="row wrap" fxLayoutAlign="center center">
+    <div class="flex-wrapper"  fxFlex="80%" fxFlex.lt-md="100%">
 
-<mat-button-toggle-group name="fontStyle" aria-label="Font Style">
-    <mat-button-toggle value="bold">Sale</mat-button-toggle>
-    <mat-button-toggle value="bold">Rent</mat-button-toggle>
-</mat-button-toggle-group>
+        
+            <section>
+                <h3 style="margin-top: 20px; font-size: 24px; font-weight: 700;">Add property</h3>
+                <p style="font-size: 18px; margin-bottom: 25px; ">Enter property details to add your property</p>
+            </section>
+            
+            <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+                <mat-button-toggle value="bold">Sale</mat-button-toggle>
+                <mat-button-toggle value="bold">Rent</mat-button-toggle>
+            </mat-button-toggle-group>
+            
+            
+            <h3 style="margin-top: 20px; font-size: 24px; font-weight: 700;">Custom Title</h3>
+            <mat-form-field appearance = "">
+                <textarea matInput placeholder = "Title"></textarea>
+            </mat-form-field>
+            
+            <section>
+                <h3 style="margin-top: 20px; font-size: 24px; font-weight: 700;">Type of property</h3>
+                <mat-radio-group [(ngModel)] = "TypeOfproperty">
+                    <mat-radio-button *ngFor = "let propertyType of propertyTypes" [value] = "propertyType"  (change)="radioChangeHandler($event)" style="margin-right: 5px;">{{propertyType}}</mat-radio-button>
+                </mat-radio-group>
+               
+                <mat-form-field style="display: flex; margin-top: 10px;">
+                     <mat-label>Select Subtype</mat-label>
+                     <mat-select>
+                         <mat-option>Option 1</mat-option>
+                         <mat-option>Option 2</mat-option>
+                         <mat-option>Option 3</mat-option>
+                     </mat-select>
+                </mat-form-field>
+            </section>
+            
+            <h3 style="margin-top: 20px; font-size: 24px; font-weight: 700;">Where's your place located?</h3> 
+            <mat-form-field>
+                    <mat-label>Enter City</mat-label>
+                    <input type="text" matInput [matAutocomplete]="auto" [formControl]="myControl">
+                <mat-autocomplete #auto = "matAutocomplete" [displayWith]="displayfun">
+                    <mat-option *ngFor = "let option of filteredOptions | async" [value]="option">
+                                {{option}}
+                    </mat-option>
+                </mat-autocomplete>
+            </mat-form-field>
+             
+             
+            <section>
+                <h3 style="margin-top: 20px; font-size: 24px; font-weight: 700;">Detailed Address:</h3>
+                <div style="display:flex; margin-top: 10px;">
+                   <mat-form-field style="margin-right: 10px;">
+                      <mat-label>Select Subtype</mat-label>
+                       <mat-select>
+                           <mat-option>Option 1</mat-option>
+                           <mat-option>Option 2</mat-option>
+                           <mat-option>Option 3</mat-option>
+                       </mat-select>
+                  </mat-form-field>
+                  <mat-form-field appearance="">
+                      <mat-label>Input</mat-label>
+                      <input matInput>
+                    </mat-form-field>
+                
+                </div>
+                <mat-checkbox class="example-margin" >Checked</mat-checkbox>
+            </section>
+        
+            <section>
+                <h3 style="margin-top: 20px; font-size: 24px; font-weight: 700;">Add Property Info for Better Results:</h3>
+               <div style="display:flex; margin-top: 10px;">
+                <mat-form-field style="margin-right: 10px;">
+                    <mat-label>Size</mat-label>
+                    <input matInput>
+                </mat-form-field>
+                <mat-form-field style="width: 60px;">
+                    <mat-label>Unit</mat-label>
+                    <mat-select>
+                        <mat-option> option 1</mat-option>
+                        <mat-option> option 2</mat-option>
+                        <mat-option> option 3</mat-option>
+                    </mat-select>
+                </mat-form-field>
+                <mat-form-field style="margin-left: 10px;">
+                    <mat-label>Price in (PKR)</mat-label>
+                    <input matInput>
+                </mat-form-field>
+               </div>
+            </section>
+        
+            <mat-form-field  appearance="" style="width: 80%; ">
+                <mat-label>Autosize textarea</mat-label>
+                <textarea 
+                          matInput
+                          cdkTextareaAutosize
+                          #autosize="cdkTextareaAutosize"
+                          cdkAutosizeMinRows="4"
+                          cdkAutosizeMaxRows="5"
+                          ></textarea>
+            </mat-form-field>
+            
+            <div style="position:relative; cursor: pointer; border : dotted 2px grey; height: 150px; width: 80%; text-align: center; ">
+                <input style="display: none;" id="input-file-id" multiple type="file" />
+                <label style = "top: 50%" for="input-file-id" class="md-button md-raised md-primary">Choose Files</label>
+                <h6 class="gray">or drag them in (max size: 5mb)</h6>
+            </div>
+
+            <mat-form-field class="example-full-width" appearance="fill">
+                  <mat-label>Telephone</mat-label>
+                  <span matPrefix>+92 &nbsp;</span>
+                  <input type="tel" matInput placeholder="xxx-xxx-xxxx">
+                  <mat-icon matSuffix>mode_edit</mat-icon>
+            </mat-form-field>
+        
+
+    </div>
+</div>
+
+
